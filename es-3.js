@@ -9,7 +9,7 @@ const book = {
 book.rating = 6;
 book.increaseRating = function (numero){
     let nuovoRating = this.rating += numero;
-    nuovoRating > 10 ? book.rating = 10 : nuovoRating;
+    nuovoRating > 10 ? this.rating = 10 : nuovoRating;
 };
 
 delete book.year;
