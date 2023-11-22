@@ -1,6 +1,14 @@
-/* Crea un programma JavaScript che:
-1. Chieda all'utente il suo nome e lo memorizzi in una variabile. (2.5 punti)
-2. Chieda all'utente il suo anno di nascita e lo memorizzi in un'altra variabile. (2.5
-punti)
-3. Visualizzi un messaggio che saluta l'utente con il suo nome e gli dice se è nato
-in un anno bisestile. (5 punti) */
+// Esercizio 1: Variabili e Stringhe 
+
+const nomeUtente = prompt('Inserisci il tuo nome');
+const annoUtente = Number(prompt('Inserisci il tuo anno di nascita'));
+
+const salutaUtente = () => {
+    if ((annoUtente % 4 == 0 && annoUtente % 100 != 0) || annoUtente % 400 == 0) {
+        alert(`Ciao ${nomeUtente}, sei nato/a nel ${annoUtente}, che è un anno bisestile!`);
+    }else {
+        alert(`Ciao ${nomeUtente}, sei nato/a nel ${annoUtente}, che non è un anno bisestile!`);
+    };
+};
+
+salutaUtente();
